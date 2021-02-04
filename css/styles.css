@@ -3,7 +3,7 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat;
     font-weight: bold;
 }
@@ -12,33 +12,43 @@ p {
     color: #8f8f8f;
 }
 
-.container-fluid {
-    padding: 3% 15%;
-}
-
 /*Headings*/
 
 .big-heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
+    font-weight: bold;
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
 }
 
-.testimonial-text {
+.section-heading {
     font-size: 3rem;
     line-height: 1.5;
 }
 
+.container-fluid {
+    padding: 3% 15%;
+}
+
+/*Sections*/
+.colored-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+}
+
 /*Navigation Bar*/
 .navbar {
-    /*margin-bottom: 4.5rem;*/
     padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
     font-family: 'ubuntu';
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -53,15 +63,9 @@ p {
 }
 
 /*Title section*/
-
-#title {
-    background-color: #ff4c68;
-    color: white;
-    text-align: left;
-}
-
 #title .container-fluid {
-    padding: 3% 15% 7%;
+    padding: 3% 15%;
+    text-align: left;
 }
 
 /*Download Buttons*/
@@ -73,11 +77,13 @@ p {
 .title-image {
     transform: rotate(20deg);
     width: 40%;
+    position: absolute;
+    right: 30%;
 }
 
 /*Middle Section*/
 #features {
-    margin: 1% 15%;
+    position: relative;
 }
 
 .feature-box {
@@ -90,7 +96,6 @@ p {
 
 .icon {
     color: #ef8172;
-    /*padding: 3%;*/
     margin-bottom: 1rem;
 }
 
@@ -99,10 +104,8 @@ p {
 }
 
 /*Testimonial Section*/
-
 #testimonials {
     background-color: #ef8172;
-    color: white;
 }
 
 .testimonial-text {
@@ -122,29 +125,18 @@ p {
 
 /*Press*/
 
-#press {
-    background-color: #ef8172;
-    padding-bottom: 3%;
-}
-
 .press-logo {
     width: 10%;
     margin: 5px 20px 50px;
 }
 
-/*Pricing*/
-/*#pricing {*/
-/*    padding: 100px;*/
-/*}*/
-
+/*Pricing Section*/
+#pricing {
+    padding: 100px;
+}
 .pricing-column {
     padding: 3% 2%;
 }
-
-.card-header {
-    background-color: #ef8172;
-}
-
 .price-text {
     font-size: 3rem;
     line-height: 1.5;
@@ -152,24 +144,13 @@ p {
 
 /* Call to Action */
 
-#cta {
-    background-color: #ff4c68;
-    color: #fff;
-}
 
 /*Footer*/
-#footer {
-    background-color: #fff;
-}
 
 .social-icon {
     margin: 0 20px;
 }
 
-/*Footer Buttons*/
-/*.footer-button-row {*/
-/*    padding: 0 48%;*/
-/*}*/
 
 @media (max-width: 1028px) {
     #title {
